@@ -5,10 +5,13 @@ public class Doctor {
 
     Doctor(){
         System.out.println("Constructor sin sobrecarga");
-        id++;
     }
-    Doctor(String name){
+    Doctor(String name, String speciality){
+
         System.out.println("Constructor con sobrecarga de nombre " + name);
+        id++;
+        this.name = name;
+        this.speciality = speciality;
     }
 
     public void showName(){
