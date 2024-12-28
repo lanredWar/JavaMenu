@@ -53,4 +53,10 @@ public class User {
             this.phoneNumber = phoneNumber;
         }
     }
+
+    @Override
+    public String toString() {
+        return "\n User: " +  name +  ",\n Email: " + email
+                + ",\n Addreess: " + address + ",\n Phone: " + phoneNumber;
+    }
 }

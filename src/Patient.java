@@ -31,12 +31,17 @@ public class Patient extends  User {
         this.birthday = birthday;
     }
 
-
     public String getBlood() {
         return blood;
     }
 
     public void setBlood(String blood) {
         this.blood = blood;
+    }
+
+    @Override
+    public String toString() {
+        return "\n Age: " + birthday + ",\n Weight: " + getWeight() + ",\n Height: " + getHeight()
+                + ",\n Type blood: " + blood;
     }
 }
